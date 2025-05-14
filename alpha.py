@@ -5,6 +5,9 @@ def main() -> None:
     screen_width = 80
     screen_height = 50
 
+    player_x = int(screen_width / 2)
+    player_y = int(screen_height / 2)
+
     tileset = tcod.tileset.load_tilesheet(
         "dejavu10x10_gs_tc.png", 32, 8, tcod.tileset.CHARMAP_TCOD
     )
@@ -13,7 +16,7 @@ def main() -> None:
         screen_width,
         screen_height,
         tileset=tileset,
-        title="Yet Another Roguelike Tutorial",
+        title="el pepe",
         vsync=True,
     ) as context:
         root_console = tcod.Console(screen_width, screen_height, order="F")
